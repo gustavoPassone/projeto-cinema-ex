@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+    text-decoration: none;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1E1E1E;
+}
+
+.home, .cartaz, .em-breve, .top-10, .rodape{
+    max-width: 1180px;
+    margin: auto;
+    padding: 64px 32px;
+
+}
+
+.cabecalho{
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+    margin: auto;
+    border-bottom: #444 solid 1px;
+    background-color: #1E1E1E;
+
+    position: sticky;
+    top: 0;
+
+    & .navbar{
+        display: flex;
+        gap: 8px;
+
+        & a{
+            padding: 8px;
+            border-radius: 8px;
+            transition: 300ms;
+        }
+
+        & a:hover{
+            background-color: rgb(255, 53, 53);
+        }
+    }
+}
+
+.home{
+    max-width: 1180px;
+    margin: auto;
+    padding: 64px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartaz{
+
+    & .titulo{
+        margin-bottom: 48px;
+
+        & h2{
+            margin-bottom: 8px;
+        }
+
+        & h3{
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+        }
+    }
+
+    & .cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px;
+        justify-content: space-between;
+
+        & .card{
+            width: 340px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 24px;
+            border-radius: 8px;
+            border: #444 solid 1px;
+
+            & .conteudo{
+                & h2{
+                    margin-bottom: 16px;
+                }
+
+                & p{
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+}
+
+.em-breve{
+    & .titulo{
+        margin-bottom: 48px;
+
+        & h2{
+            margin-bottom: 8px;
+        }
+
+        & h3{
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+        }
+    }
+
+    & .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        & .card{
+            border: #444 solid 1px;
+            border-radius: 8px;
+            display: flex;
+            padding: 24px;
+            gap: 24px;
+
+            & .sinopse{
+                margin-bottom: 16px;
+
+                & h2{
+                    margin-bottom: 8px;
+                }
+
+                & p{
+                    color: rgb(255, 255, 255, 0.7);
+                }
+            }
+
+            & .conteudo{
+                max-width: 884px;
+
+                & button{
+                    padding: 12px;
+                    background-color: #303030;
+                    border: 1px solid #949494;
+                    cursor: pointer;
+                    border-radius: 8px;
+                }
+                
+            }
+        }
+    }
+}
+
+.top-10{
+    & .titulo{
+        margin-bottom: 48px;
+
+        & h2{
+            margin-bottom: 8px;
+        }
+
+        & h3{
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+        }
+    }
+
+    & .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 52px;
+
+        & .card{
+            padding: 16px;
+            border: #444 solid 1px;
+            border-radius: 8px;
+
+            & img{
+                margin-bottom: 16px;
+            }
+
+            & .conteudo{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                & h2{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                & p:nth-child(2){
+                    font-size: 700;
+                }
+
+                & p:nth-child(3){
+                    font-size: 700;
+                }
+            }
+        }
+    }
+}
+
+.rodape{
+    text-align: center;
+}
